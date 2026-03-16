@@ -1,0 +1,239 @@
+h1 {
+    margin: 0;
+}
+
+h2 {
+    margin: 0;
+}
+
+
+body {
+    width: 100vw;
+    margin: auto;
+}
+
+h1 {
+    font: 2em sans-serif;
+    margin-bottom: 2vh;
+    margin-top: 3vh;
+}
+
+h2 {
+    font: 1em sans-serif;
+    margin-top: 5vh;
+}
+
+h3 {
+    font: 1em sans-serif;
+}
+
+p {
+    font: 1em sans-serif;
+}
+
+li {
+  font-family: sans-serif;
+  font-size: 1em;
+  position: relative;
+  padding-left: 1.2em;
+  margin-bottom: 0.35em;
+}
+
+li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  top: 0.1em;
+  font-size: 1em;
+}
+
+a {
+  color: inherit;          /* use surrounding text color */
+  text-decoration: none;   /* remove underline */
+  cursor: pointer;         /* show pointer cursor */
+  font-weight: 500;        /* optional: make it slightly bolder */
+}
+
+a:hover {
+  text-decoration: underline;  /* show underline on hover */
+}
+
+button {
+    margin-left: 10vw;
+    border-radius: 5px;
+    font: 1em sans-serif;
+    background-color: #5b82a0;
+    border: none;
+    padding: 5px;
+}
+
+.resume-name {
+    color: rgba(255, 255, 255, 0.895);
+    letter-spacing: 5px;
+}
+
+.resume-credentials {
+    color: white;
+
+}
+
+.content {
+    margin:auto;
+}
+
+.resume-heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    background-color: #4F4F4F;
+    margin-top: 0;
+    height: 20vh;
+}
+
+.resume-content {
+    display: flex;
+    flex-direction: row;
+}
+
+.resume-left-pane {
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    background-color: #456278;
+}
+
+.left-pane-content {
+    margin-top: 20vh;
+    display: flex;
+    flex-direction: column;
+    padding: 5vh;
+    
+}
+
+.left-pane-heading {
+    margin: auto;
+    letter-spacing: 5px;
+    color: white;
+}
+
+.contact-item {
+    margin: auto;
+    margin-top: 5vh;
+    letter-spacing: 5px;
+    color: white;
+}
+
+.resume-right-pane {
+    display: flex;
+    flex-direction: column;
+    width: 60vw;
+    padding: 4vw;
+    background-color: #E9EEF2;
+
+}
+
+.toolbar {
+    display: flex;
+    background-color: #456278;
+    padding: 1%;
+}
+
+.core-competencies {
+  columns: 2;
+  list-style: none;
+  padding-left: 0;
+}
+
+.core-competencies li {
+  position: relative;
+  padding-left: 1em;
+  margin-bottom: 0.3em;
+}
+
+.core-competencies li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  top: 0.05em;
+  font-size: 1em;
+}
+.job-entry {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-top: 1em;
+  }
+
+.job-dates {
+    font-style: italic;
+    white-space: nowrap;
+  }
+
+  .job-title {
+    font-weight: bold;
+  }
+
+  /* Prevent elements from breaking inside */
+* {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, p, ol, li, table {
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+/* Ensure clean page breaks */
+section, div, .resume-section {
+  page-break-inside: avoid;
+  break-inside: avoid;
+  page-break-before: auto;
+  page-break-after: auto;
+}
+
+/* Optional: add a forced page break before certain sections */
+.page-break {
+  page-break-before: always;
+  break-before: page;
+}
+
+.print-mode {
+  font-size: 0.85em;
+  line-height: 1.2;
+}
+
+.print-mode li, .print-mode p, .print-mode h2, .print-mode h3 .print-mode{
+  font-size: 90%;
+}
+
+.print-mode .left-pane-content {
+  font-size: 0.85em;      /* shrink slightly */
+  line-height: 1.2;       /* tighter spacing */
+}
+
+.print-mode .left-pane-content h3.left-pane-heading {
+  font-size: 0.95em; 
+ /* slightly smaller heading */
+}
+
+.print-mode .left-pane-content h2.contact-item {
+  white-space: nowrap;   /* Prevent text from wrapping */
+  overflow: hidden;      /* Hide overflow if container too small */
+  text-overflow: ellipsis; /* Optional: add “…” if text is cut off */
+}
+
+.print-mode .resume-right-pane {
+    padding: 5%;
+    height: 30.771in;
+}
+
+
+
